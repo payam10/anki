@@ -1,15 +1,24 @@
 
-<div class="container"
+<div class="container">
 
-  <h1>Welcome to Anki!</h1>
+  <h2>Welcome to Anki!</h2>
+  <hr>
   <br>
-  <form action="/all_cards">
+
+  <form class="new" action="/register">
+    <input type="submit" value="Sign up" name="view">
+  </form>
+
+  <form class="existing" action="/login">
+    <input type="submit" value="Login" name="view">
+  </form>
+</div>
+
+<!--   <form action="/all_cards">
     <h3>To view Flash Cards</h3>
     <input type="submit" value="Click here!" name="view">
   </form>
-<!--   #<%= Card.all.map(&:question)  %>
  -->
-
 
 <!--   <table>
     <tr>

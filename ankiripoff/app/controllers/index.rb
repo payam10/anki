@@ -9,7 +9,6 @@ get '/all_cards' do
   erb :view
 end
 
-
 get '/register' do
 
   erb :register
@@ -23,6 +22,13 @@ end
 post '/' do
   puts "[LOG]  #{params.inspect}"
 end
+
+get '/play' do
+
+  erb :play
+end
+
+
 
 
 

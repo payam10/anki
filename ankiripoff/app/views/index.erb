@@ -1,40 +1,13 @@
-<div class="question">
-  <h1>Question!</h1>
-  <p>play!</p>
+<div class="home">
+<h2>Welcome to Anki!</h2><br>
+  <hr>
+<form action="/register" method="get">
+  <p>To register</p>
+  <button type="submit">Register!</button>
+</form>
 </div>
 
-<div class="answer">
-  <h1>Answer!</h1>
-  <p>play!</p>
-
-  <div class="button">
-  <form name="flip" align="center" action="/" method="post">
-    <input type="submit" value="Flip">
-  </form>
-</div>
-</div>
-
-<div class="button">
-  <form name="correct" align="center">
-    <input type="submit" value="GOOD">
-  </form>
-</div>
-
-<div class="button">
-  <form name="incorrect" align="center">
-    <input type="submit" value="BAD">
-  </form>
-</div>
-
-<div class="button">
-  <form name="next" align="center">
-    <input type="submit" value="Next">
-  </form>
-</div>
-
-<div class="button">
-  <form name="exit" align="center">
-    <input type="submit" value="Exit">
-  </form>
-</div>
-
+<form class="play" action="/play" method="get">
+  <p>To play</p>
+  <button type="submit">Play!</button>
+</form>

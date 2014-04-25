@@ -9,6 +9,7 @@ get '/all_cards' do
   erb :view
 end
 
+
 get '/register' do
 
   erb :register
@@ -18,5 +19,11 @@ get '/login' do
 
   erb :login
 end
+
+post '/' do
+  puts "[LOG]  #{params.inspect}"
+end
+
+
 
 

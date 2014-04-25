@@ -9,5 +9,9 @@ get '/all_cards' do
   erb :view
 end
 
+post '/' do
+  puts "[LOG]  #{params.inspect}"
+end
+
 
 

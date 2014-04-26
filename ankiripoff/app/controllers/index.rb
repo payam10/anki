@@ -3,12 +3,6 @@ get '/' do
   erb :index
 end
 
-get '/all_cards' do
-  @results = Card.all.map(&:question)
-
-  erb :view
-end
-
 get '/register' do
 
   erb :register
@@ -24,6 +18,9 @@ post '/' do
 end
 
 get '/play' do
+  @questions = Card.all.map(&:question)
+  @answers = Card.all.map(&:answer)
+
 
   erb :play
 end

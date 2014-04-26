@@ -46,3 +46,7 @@ th {
   text-align: center;
   color: blue;
 }
+
+.button {
+  float: left;
+}

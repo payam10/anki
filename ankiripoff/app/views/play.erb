@@ -12,11 +12,18 @@
   </div>
 </div>
 
+<div class="rules">
+  <p>Press 'G' GOOD</p>
+  <p>Press 'B' BAD</p>
+  <p>Press 'E' EXIT</p>
+</div>
+
 <div class="button">
   <form name="correct" align="center">
     <input type="submit" value="GOOD">
   </form>
 </div>
+
 
 <div class="button">
   <form name="incorrect" align="center">
@@ -32,7 +39,22 @@
 
 <div class="button">
   <form action='/' name="exit" align="center">
-    <input type="submit" value="Exit">
+    <input class="test" type="submit" value="Exit">
   </form>
-</div>
 
+  <script type="text/javascript">
+
+
+  $(document).keypress(function(event){
+
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '101'){
+      window.location.href='/';
+    }
+
+  });
+
+  </script>
+
+
+</div>

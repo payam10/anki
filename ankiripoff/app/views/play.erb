@@ -1,17 +1,15 @@
 <div class="question">
-  <h1>Question!</h1>
-  <p>play!</p>
-</div>
+  <h1>Question</h1>
+  <%= @questions[0] %>
+  <div class="button" id="flip">
+    <form name="flip" align="center" action="/" method="post">
+      <input type="submit" value="Flip">
+    </form>
+  </div>
 
-<div class="answer">
-  <h1>Answer!</h1>
-  <p>play!</p>
-
-  <div class="button">
-  <form name="flip" align="center" action="/" method="post">
-    <input type="submit" value="Flip">
-  </form>
-</div>
+  <div class="answer">
+    <h1>Answer</h1>
+  </div>
 </div>
 
 <div class="button">
@@ -33,7 +31,7 @@
 </div>
 
 <div class="button">
-  <form name="exit" align="center">
+  <form action='/' name="exit" align="center">
     <input type="submit" value="Exit">
   </form>
 </div>

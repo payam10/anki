@@ -7,7 +7,39 @@
 </form>
 </div>
 
+
+<script type="text/javascript">
+
+
+$(document).keypress(function(event){
+
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  if(keycode == '114'){
+    window.location.href='/register';
+  }
+
+});
+
+</script>
+
 <form class="play" action="/play" method="get">
   <p>To play</p>
   <button type="submit">Play!</button>
 </form>
+
+
+<script type="text/javascript">
+
+
+$(document).keypress(function(event){
+
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  if(keycode == '112'){
+    window.location.href='/play';
+  }
+
+});
+
+</script>
+
+

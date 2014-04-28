@@ -1,0 +1,15 @@
+<header>FlashCard Anki
+ <div id="exit">
+  <form action='/' name="exit">
+    <input class="test" type="submit" value="Exit">
+  </form>
+</div>
+</header>
+
+<ul id="card_decks">
+<% @decks.shuffle.each do |deck| %>
+  <li>
+    <a href="/play/<%= deck.id %>" alt="<%= deck.id %>"> <%= deck.topic %></a>
+  </li>
+<% end %>
+</ul>

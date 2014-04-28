@@ -25,16 +25,8 @@ $(document).keypress(function(event){
   if(keycode == '114'){
     window.location.href='/register';
   }
-  if(keycode == '112'){
-    window.location.href='/play';
-  }
+
   if(keycode == '101'){
     window.location.href='/';
     }
-  if(keycode == '103'){
-    window.location.href='/play';
-    }
- 	if(keycode == '98'){
-   window.location.href='/play';
-   }
 });

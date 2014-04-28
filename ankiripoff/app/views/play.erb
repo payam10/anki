@@ -1,6 +1,13 @@
+<header>FlashCard Anki
+ <div id="exit">
+  <form action='/' name="exit">
+    <input class="test" type="submit" value="Exit">
+  </form>
+</div>
+</header>
+
 <div class="question">
   
-
   <h1>Question</h1>
   <%= @question %>
   <div class="button" id="flip">
@@ -29,15 +36,11 @@
 
 
 <div class="button">
-  <form name="incorrect" align="center">
+  <form action="/play" name="incorrect" align="center">
     <input type="submit" value="BAD">
   </form>
 </div>
 
-<div class="button">
-  <form action='/' name="exit" align="center">
-    <input class="test" type="submit" value="Exit">
-  </form>
 
   <script type="text/javascript">
 
@@ -53,4 +56,4 @@
   </script>
 
 
-</div>
+

@@ -4,12 +4,12 @@
     }*/
 
 .question, .answer {
-  margin: 20px auto;
-  width: 600px;
+  margin: 100px auto;
+  width: 300px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;*/
+  border: 1px dotted black;
   text-align: center;
-  color: blue;
+  color: black;
 }
 th {
   text-align: left;
@@ -50,4 +50,21 @@ th {
 
 .rules {
   text-align: center;
+}
+
+header {
+  background: #595959;
+  padding: 10px 0 10px 50px;
+  color: white;
+  font-size: 20px;
+}
+
+#exit {
+  margin-right: 30px;
+  float: right;
+}
+
+#flip {
+  margin: 20px 0 0 250px;
+
 }

@@ -1,6 +1,6 @@
+<header>FlashCard Anki</header>
+
 <div class="home">
-<h2>Welcome to Anki!</h2><br>
-  <hr>
 <form action="/register" method="get">
   <p>To register</p>
   <button type="submit">Register!</button>
@@ -8,38 +8,11 @@
 </div>
 
 
-<script type="text/javascript">
-
-
-$(document).keypress(function(event){
-
-  var keycode = (event.keyCode ? event.keyCode : event.which);
-  if(keycode == '114'){
-    window.location.href='/register';
-  }
-
-});
-
-</script>
-
-<form class="play" action="/play" method="get">
+<form class="play" action="/display_decks" method="post">
   <p>To play</p>
   <button type="submit">Play!</button>
 </form>
 
 
-<script type="text/javascript">
-
-
-$(document).keypress(function(event){
-
-  var keycode = (event.keyCode ? event.keyCode : event.which);
-  if(keycode == '112'){
-    window.location.href='/play';
-  }
-
-});
-
-</script>
 
 

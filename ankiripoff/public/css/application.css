@@ -1,15 +1,42 @@
 
-.container {
+/*.container {
     margin: 20px auto;
-    }
+    }*/
+
+#card_decks {
+  margin: 50px auto;
+  width: 600px;
+}
+
+#card_decks li {
+  float: left;
+  padding-left: 100px;
+  list-style: none;
+
+}
+
+#center_body {
+
+  margin: 0 auto;
+  width: 300px;
+
+}
+.button {
+  float: left;
+  padding-left: 60px;
+
+}
 
 .question, .answer {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;*/
+  margin: 75px auto;
+  width: 300px;
+  height: 150px;
+  padding: 0 20px 20px 20px;
+  border: 1px dotted black;
   text-align: center;
-  color: blue;
+  color: black;
+  background: url(/index_card.png);
+  background-size: 100%;
 }
 th {
   text-align: left;
@@ -47,7 +74,37 @@ th {
   color: blue;
 }
 
+body {
+  background-color: white;
+}
 
 .rules {
   text-align: center;
+  padding-top: 50px;
+
+}
+
+.rules p {
+  color: white;
+}
+
+header {
+  background: #595959;
+  padding: 15px 0 15px 50px;
+  color: white;
+  font-size: 20px;
+}
+
+#exit {
+  margin-right: 30px;
+  float: right;
+}
+
+#flip {
+  margin: 20px 0 0 250px;
+
+}
+
+h1 {
+  margin: 0 0 47px 0;
 }

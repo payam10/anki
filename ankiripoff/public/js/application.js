@@ -5,12 +5,28 @@ $(document).ready(function() {
 
 
   $('.answer').hide();
-  $('#flip').click(funciton(e){
+
+  $('#flip').click(function(e)	{
     e.preventDefault();
-  $('.answer').show('slow');
+  $('.question').hide();
+  $('.answer').show();
 
   });
-
+  
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+});
+
+
+$(document).keypress(function(event){
+
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  
+  if(keycode == '114'){
+    window.location.href='/register';
+  }
+
+  if(keycode == '101'){
+    window.location.href='/';
+    }
 });

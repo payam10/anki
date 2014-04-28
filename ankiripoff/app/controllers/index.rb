@@ -17,15 +17,21 @@ post '/' do
   puts "[LOG]  #{params.inspect}"
 end
 
-get '/play' do
-  @questions = Card.all.map(&:question)
-  @answers = Card.all.map(&:answer)
-
-
+get '/play/:deck_id' do
+	@deck_id = params[:deck_id]
+	@cards = Card.where(deck_id: @deck_id).sample
+  @question = @cards.question
+  @answer = @cards.answer
   erb :play
 end
 
+post '/display_decks' do
 
+	@decks = Deck.all
+
+
+	erb :display_decks
+end
 
 
 

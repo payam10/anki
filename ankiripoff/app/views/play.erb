@@ -1,16 +1,19 @@
 <div class="question">
+  
+
   <h1>Question</h1>
-  <%= @questions[0] %>
+  <%= @question %>
   <div class="button" id="flip">
     <form name="flip" align="center" action="/" method="post">
       <input type="submit" value="Flip">
     </form>
   </div>
-
+</div>
   <div class="answer">
     <h1>Answer</h1>
+    <%= @answer %>
   </div>
-</div>
+
 
 <div class="rules">
   <p>Press 'G' GOOD</p>
@@ -19,7 +22,7 @@
 </div>
 
 <div class="button">
-  <form name="correct" align="center">
+  <form action="/play" name="correct" align="center">
     <input type="submit" value="GOOD">
   </form>
 </div>

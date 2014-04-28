@@ -5,12 +5,15 @@ $(document).ready(function() {
 
 
   $('.answer').hide();
-  $('#flip').click(funciton(e){
+
+  $('#flip').click(function(e)	{
     e.preventDefault();
   $('.answer').show('slow');
 
   });
-
+  
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 });
+
+

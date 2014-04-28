@@ -1,7 +1,7 @@
 require 'csv'
 
 csvarray = CSV.read('./db/N5-vocab-list-10.csv')
-small_deck = csvarray.first(10)
+small_deck = csvarray.sample(10)
 
 jpn_deck = Deck.create(topic: "Japanese N5 Vocab List", card_count: small_deck.size)
 

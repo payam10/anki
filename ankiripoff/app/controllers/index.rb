@@ -18,10 +18,9 @@ post '/' do
 end
 
 get '/play' do
-  @questions = Card.all.map(&:question)
-  @answers = Card.all.map(&:answer)
-
-
+  @card = Card.all.sample
+  @question = @card.question
+  @answer = @card.answer
   erb :play
 end
 

@@ -3,13 +3,28 @@
     margin: 20px auto;
     }*/
 
-.question, .answer {
-  margin: 100px auto;
+#center_body {
+
+  margin: 0 auto;
   width: 300px;
-  padding: 0px 20px 20px 20px;
+
+}
+.button {
+  float: left;
+  padding-left: 6e0px;
+
+}
+
+.question, .answer {
+  margin: 75px auto;
+  width: 300px;
+  height: 150px;
+  padding: 0 20px 20px 20px;
   border: 1px dotted black;
   text-align: center;
   color: black;
+  background: url(/index_card.png);
+  background-size: 100%;
 }
 th {
   text-align: left;
@@ -47,14 +62,23 @@ th {
   color: blue;
 }
 
+body {
+  background-color: black;
+}
 
 .rules {
   text-align: center;
+  padding-top: 50px;
+
+}
+
+.rules p {
+  color: white;
 }
 
 header {
   background: #595959;
-  padding: 10px 0 10px 50px;
+  padding: 15px 0 15px 50px;
   color: white;
   font-size: 20px;
 }
@@ -67,4 +91,8 @@ header {
 #flip {
   margin: 20px 0 0 250px;
 
+}
+
+h1 {
+  margin: 0 0 47px 0;
 }

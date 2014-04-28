@@ -10,8 +10,8 @@
   
   <h1>Question</h1>
   <%= @question %>
-  <div class="button" id="flip">
-    <form name="flip" align="center" action="/" method="post">
+  <div id="flip">
+    <form name="flip" action="/" method="post">
       <input type="submit" value="Flip">
     </form>
   </div>
@@ -21,39 +21,25 @@
     <%= @answer %>
   </div>
 
+<div id='center_body'>
+  <div class="button">
+  <form action="/play" name="correct" align="center">
+    <input type="submit" value="GOOD">
+  </form>
+</div>
+<div class="button">
+  <form action="/play" name="incorrect" align="center">
+    <input type="submit" value="BAD">
+  </form>
+</div>
+</div>
+
 
 <div class="rules">
   <p>Press 'G' GOOD</p>
   <p>Press 'B' BAD</p>
   <p>Press 'E' EXIT</p>
 </div>
-
-<div class="button">
-  <form action="/play" name="correct" align="center">
-    <input type="submit" value="GOOD">
-  </form>
-</div>
-
-
-<div class="button">
-  <form action="/play" name="incorrect" align="center">
-    <input type="submit" value="BAD">
-  </form>
-</div>
-
-
-  <script type="text/javascript">
-
-
-  $(document).keypress(function(event){
-
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if(keycode == '101'){
-      window.location.href='/';
-    }
-  });
-
-  </script>
 
 
 

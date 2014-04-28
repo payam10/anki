@@ -8,7 +8,8 @@ $(document).ready(function() {
 
   $('#flip').click(function(e)	{
     e.preventDefault();
-  $('.answer').show('slow');
+  $('.question').hide();
+  $('.answer').show();
 
   });
   
@@ -17,3 +18,23 @@ $(document).ready(function() {
 });
 
 
+$(document).keypress(function(event){
+
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  
+  if(keycode == '114'){
+    window.location.href='/register';
+  }
+  if(keycode == '112'){
+    window.location.href='/play';
+  }
+  if(keycode == '101'){
+    window.location.href='/';
+    }
+  if(keycode == '103'){
+    window.location.href='/play';
+    }
+ 	if(keycode == '98'){
+   window.location.href='/play';
+   }
+});
